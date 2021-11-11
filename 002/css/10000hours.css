@@ -11,6 +11,7 @@
     overflow: hidden;
 }
 
+/* Font */
 @font-face {
     font-family: 'OTEnjoystoriesBA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
@@ -41,6 +42,7 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
+/* Style */
 body {
     display: flex;
     flex-direction: column;
@@ -52,6 +54,7 @@ body {
     font-size: 20px;
 }
 
+/* Header Style */
 header {
     display: flex;
     flex-direction: column;
@@ -79,6 +82,7 @@ header .head_title img {
     width: 100%;
 }
 
+/* Main Style */
 main {
     display: flex;
     flex-direction: column;
@@ -94,20 +98,33 @@ main .main_title {
 
 main .main_ex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
 }
 
-main .main_ex img {
-    position: relative;
-}
-
 main .main_ex .ex_explain {
-    position: absolute;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     font-size: 17px;
     line-height: 1.7;
+}
+
+main .main_ex .ex_explain::before {
+    position: absolute;
+    display: flex;
+    content: url("../img/txt-left.png");
+    margin-right: 10px;
+}
+
+main .main_ex .ex_explain::after {
+    position: absolute;
+    right: 0;
+    display: flex;
+    content: url("../img/txt-right.png");
+    margin-left: 10px;
 }
 
 main .main_ex strong {
@@ -115,10 +132,9 @@ main .main_ex strong {
     font-size: 20px;
 }
 
-main .main_input {
+main .main_input form {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     line-height: 4;
@@ -151,6 +167,10 @@ main .main_input .input_hour {
     justify-content: center;
 }
 
+main .main_btn {
+    margin-bottom: 100px;
+}
+
 main .main_btn .input_btn {
     position: relative;
     font-family: 'GmarketSansBold';
@@ -162,12 +182,42 @@ main .main_btn .input_btn {
     padding: 10px 40px;
 }
 
-.main_btn::after {
+main .main_btn::after {
     position: absolute;
-    content: url("../img/click.png");
+    content: url("../img/hand.png");
     margin-left: 10px;
 }
 
+main .main_result {
+    line-height: 1.7;
+}
+
+main .main_result strong {
+    font-size: 48px;
+    font-family: 'GmarketSansBold';
+}
+
+main .main_result .result_train {
+    font-family: 'GmarketSansBold';
+    font-size: 20px;
+    color: #5B2386;
+    background-color: #FCEE21;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 40px;
+}
+
+main .main_result .result_share {
+    font-family: 'GmarketSansBold';
+    font-size: 20px;
+    color: #5B2386;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 40px;
+}
+
+/* Footer Style */
 footer {
     display: flex;
     flex-direction: column;
@@ -183,49 +233,60 @@ footer .foot_comp {
     margin: 5px auto;
 }
 
-@media screen and (max-width: 375px) {
+/* Iphone X CSS Width (375px) */
+@media screen and (max-width: 414px) {
     header .head_clock {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
     
     header .head_title {
-        width: 400px;
+        width: 300px;
+    }
+    
+    main .main_title {
+        font-size: 25px;
+    }
+    
+    main .main_input form {
+        line-height: 2;
+    }
+    
+    main .main_input input {
+        width: 150px;
+        padding: 10px 15px;
+        font-size: 12px;
     }
 
-    main .main_ex img {
-        width: 80%;
+    main .main_input .input_job {
+        flex-direction: column;
     }
-
-    main .main_ex .ex_explain {
-        font-size: 14px;
-        line-height: 1.7;
+    
+    main .main_input .input_hour {
+        flex-direction: column;
     }
     
     main .main_btn .input_btn {
-        font-size: 14px;
-        border-radius: 21px;
-        padding: 7px 28px;
+        font-size: 12px;
     }
     
     .main_btn::after {
-        position: absolute;
-        content: url("../img/click.png");
-        margin-left: 10px;
+        display: none;
+    }
+
+    main .main_result p {
+        font-size: 12px;
     }
     
-    footer {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 70px;
+    main .main_result strong {
+        font-size: 24px;
     }
     
-    footer .foot_comp {
-        margin-bottom: 20px;
+    main .main_result .result_train {
+        font-size: 12px;
     }
     
-    .foot_copy p{
-        font-size: 10px;
-        margin: 5px auto;
+    main .main_result .result_share {
+        font-size: 12px;
     }
 }
