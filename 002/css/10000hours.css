@@ -279,11 +279,11 @@ footer .foot_comp {
         display: none;
     }
 
-    main .main_result p {
+    main .main_result .result_txt p {
         font-size: 12px;
     }
     
-    main .main_result strong {
+    main .main_result .result_txt strong {
         font-size: 24px;
     }
     
@@ -293,5 +293,14 @@ footer .foot_comp {
     
     main .main_result .result_share {
         font-size: 12px;
+    }
+    
+    main .main_result .result_txt {
+        margin-bottom: 80px;
+    }
+
+    main .main_result .result_btn button {
+        font-size: 12px;
+        padding: 9px 30px;
     }
 }
