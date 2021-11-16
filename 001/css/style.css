@@ -105,8 +105,6 @@
     border: 2px solid #BDBDBD;
     border-radius: 15px;
     background-color: #FFFFFF;
-    /* margin: 0 auto; */
-    /* width: 1000px; */
 }
 
 .cont-main .movie-title{
@@ -120,7 +118,7 @@
     border: 1px solid #BDBDBD;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    margin: 24px 12px 0;
+    margin: 24px 18px 0;
 }
 
 .list-movieInfo li > a[class^="link"] {
@@ -146,7 +144,7 @@
     content: "";
     width: 16px;
     height: 16px;
-    background: url(../images/btn_play.png);
+    background: url("../img/btn_play.png");
     vertical-align: top;
     margin: 11px 2px 0 0;
 }
@@ -195,7 +193,7 @@
     width: 14px;
     height: 13px;
     margin-left: 5px;
-    background-image: url("../images/star.png");
+    background-image: url("../img/star.png");
     vertical-align: top;
 }
 
@@ -279,15 +277,15 @@
 }
 
 .cont-company .list-sns .link-twitter{
-    background-image: url("../images/twitter.png");
+    background-image: url("../img/twitter.png");
 }
 
 .cont-company .list-sns .link-insta{
-    background-image: url("../images/instagram.png");
+    background-image: url("../img/instagram.png");
 }
 
 .cont-company .list-sns .link-facebook{
-    background-image: url("../images/facebook.png");
+    background-image: url("../img/facebook.png");
 }
 
 .cont-company .txt-copy{
