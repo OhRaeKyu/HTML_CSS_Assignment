@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style_module.css">
+    <title>modules</title>
+</head>
+<body>
+    <p>버튼 모듈</p>
+    <button type="button" class="btn-login">로그인</button>
+    <button type="button" class="btn-close"><img src="./img/close.png" alt="로그인 닫기 버튼"></button>
+    
+    <p>인풋 모듈</p>
+    <fieldset class="module-input module-input-id error">
+        <label for="inputId" class="txt-hide">아이디</label>
+        <input type="text" name="ID" id="inputId" class="input-login" placeholder="아이디">
+        <strong class="input-error">아이디를 입력해 주세요.</strong>
+    </fieldset>
+    
+    <fieldset class="module-input error">
+        <label for="inputPw" class="txt-hide">비밀번호</label>
+        <input type="password" name="PW" id="inputPw" class="input-login" placeholder="비밀번호">
+        <strong class="input-error">아아디 혹은 비밀번호가 일치하지 않습니다.</strong>
+    </fieldset>
+
+    <p>링크 모듈</p>
+    <li><a href="#" class="icon-google link-sns-login">구글 계정으로 로그인</a></li>
+    <li><a href="#" class="icon-facebook link-sns-login">페이스북 계정으로 로그인</a></li>
+    <li><a href="#" class="icon-naver link-sns-login">네이버 계정으로 로그인</a></li>
+    <li><a href="#" class="icon-kakao link-sns-login">카카오 계정으로 로그인</a></li>
+</body>
+</html>

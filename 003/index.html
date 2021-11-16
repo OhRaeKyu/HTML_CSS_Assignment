@@ -6,41 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_module.css">
+    <title>Weniv Login</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <main id="appLogin">
+        <h1 class="sr-only">로그인 페이지</h1>
+        <article class="cont-login">
+            <img src="./img/weniv-logo.png" alt="위니브 로고입니다." class="tit-login">
+            <p class="txt-login">위니브를 더 즐겁고 편리하게 이용하세요.</p>
+            <button type="button" class="btn-login">로그인</button>
+        </article>
+    </main>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_module.css">
     <title>Weniv Login</title>
 </head>
 <body>
-    <!-- <main class="login">
+    <main class="login">
         <img src="./img/weniv-logo.png" alt="위니브 로고입니다." class="login-logo">
         <p class="login-txt">위니브를 더 즐겁고 편리하게 이용하세요.</p>
         <button type="button" class="login-btn">로그인</button>
-    </main> -->
+    </main>
     <h1 class="sr-only">Login Modal Window</h1>
     <div class="modal">
         <h2 class="sr-only">Login Modal Window Header</h2>
         <header class="modal-head">
-            <p>로그인 또는 회원가입</p>
+            <p class="modal-title">로그인 또는 회원가입</p>
             <img src="./img/close.png" alt="닫기 버튼 이미지입니다." class="modal-close">
         </header>
         <h2 class="sr-only">Login Modal Window Main</h2>
         <main class="modal-main">
-            <p>위니브에서 여러분의 궁금증을 해결하세요! :)</p>
-            <form action="#">
-                <input type="text" name="ID" id="input-id">
-                <input type="password name="PW id="input-pw">                
+            <p class="main-title">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+            <form action="#" class="main-input">
+                <input type="text" name="ID" id="input-id" placeholder="아이디">
+                <input type="password" name="PW id="input-pw" placeholder="비밀번호">                
             </form>
-            <p>로그인 상태 유지</p>
-            로그인
-            회원가입
-            아이디/비밀번호 찾기
+            <label class="login-option">로그인 상태 유지</label>
+            <button type="button" class="login-btn">로그인</button>
+            <div class="sign">
+                <a href="#" class="login-option login-signup">회원가입</a>
+                <a href="#" class="login-option">아이디/비밀번호 찾기</a>
+            </div>
         </main>
         <h2 class="sr-only">Login Modal Window Footer</h2>
         <footer class="modal-foot">
-            <p>또는</p>
-            구글 계정으로 로그인
-            페이스북 계정으로 로그인
-            네이버 계정으로 로그인
-            카카오톡 계정으로 로그인
+            <p class="foot-hr">또는</p>
+            <a href="#">구글 계정으로 로그인</a>
+            <a href="#">페이스북 계정으로 로그인</a>
+            <a href="#">네이버 계정으로 로그인</a>
+            <a href="#">카카오 계정으로 로그인</a>
         </footer>
     </div>
+
+    <script>
+        let 모달 = false;
+
+        document.querySelector('.modal .modal-close').addEventListener('click', function(){
+            if (모달 == true){
+                document.querySelector('.modal').style.display = 'none';
+                document.querySelector('.login').style.display = 'flex';
+                모달 = false;
+            }
+        });
+
+        document.querySelector('.login .login-btn').addEventListener('click', function(){
+            if (모달 == false){
+                document.querySelector('.modal').style.display = 'flex';
+                document.querySelector('.login').style.display = 'none';
+                모달 = true;
+            }
+        });
+    </script>
 </body>
-</html>
+</html> -->
