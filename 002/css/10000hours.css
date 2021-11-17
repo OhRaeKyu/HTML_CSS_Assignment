@@ -238,7 +238,7 @@ footer .foot_comp {
     margin: 5px auto;
 }
 
-/* Iphone X CSS Width (375px) */
+/* Iphone XS CSS Width (414px) */
 @media screen and (max-width: 414px) {
     header .head_clock {
         width: 150px;
