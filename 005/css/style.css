@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/* screen leader only */
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Module */
+.btn-shadow {
+    width: 100%;
+    padding: 7px;
+    font-size: 13px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bor-gray {
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+/* style */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #EAE8FE;
+    text-align: center;
+}
+
+/* header style */
+.head .tit-app {
+    width: 386px;
+    margin-bottom: 67px;
+}
+
+/* main style */
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 0 28px;
+}
+
+.main .vending-machine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 360px;
+    height: 545px;
+    padding: 31px 0 28px;
+    background-color: #FFFFFF;
+}
+
+.vending-machine .list-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.vending-machine .btn-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+    padding: 9px 11px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.vending-machine .btn-item:active::before{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 95%;
+    top: 0;
+    left: 0;
+    border: 3px solid #6327FE;
+    border-radius: 10px;
+}
+
+.vending-machine .btn-item.sold-out::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: no-repeat center / 58px 45px url("../img/Sold-out.png") rgba(0, 0, 0, 0.8);
+    z-index: 1; 
+}
+
+.vending-machine .btn-item.sold-out {
+    pointer-events: none;
+}
+
+.vending-machine .btn-item .img-item {
+    width: 36px;
+    height: 65px;
+}
+
+.vending-machine .btn-item .tit-item {
+    font-size: 9px;
+}
+
+.vending-machine .btn-item .txt-item {
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 5px 16px;
+    background-color: #6327FE;
+    border-radius: 50px;
+}
+
+.vending-machine .list-inp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.vending-machine .list-inp .inp-left {
+    grid-column: 1 / 3;
+}
+
+.vending-machine .list-inp .inp-bot {
+    grid-row: 3 / 5;
+}
+
+.vending-machine .list-inp .tit-balance{
+    text-align: left;
+    padding: 6px 10px 7px;
+    font-size: 14px;
+    background-color: #EAE8FE;
+    border-radius: 5px;
+}
+
+.vending-machine .list-inp .txt-balance{
+    float: right;
+}
+
+.vending-machine .list-inp .inp-put {
+    width: 100%;
+    padding: 6px 0 8px 6px;
+    color: #BDBDBD;
+}
+
+.vending-machine .list-inp .item-staged {
+    display: flex;
+    align-items: center;
+}
+
+.vending-machine .list-inp .img-item {
+    width: 18px;
+    height: 33px;
+}
+
+.vending-machine .list-inp .txt-item {
+    font-size: 9px;
+    color: #333333;
+}
+
+.vending-machine .list-inp .num-count {
+    /* float: right; */
+    font-size: 14px;
+    margin: 8px 8px 8px 0;
+}
+
+.vending-machine .list-inp .btn-get {
+    height: 106px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #6327FE;
+}
+
+.main .my-info {
+    width: 360px;
+    height: 545px;
+}
