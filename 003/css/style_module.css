@@ -1,13 +1,3 @@
-/* text hide */
-.txt-hide {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-}
-
 /* Style */
 /* button module */
 .btn-login {
@@ -31,11 +21,11 @@
 }
 
 /* input module */
-.module-input + .module-input {
+.module-inp + .module-inp {
     margin-top: 10px;
 }
 
-.module-input .input-login {
+.module-inp .inp-login {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -46,19 +36,20 @@
     line-height: 20px;
 }
 
-.module-input.module-input-id.error .input-login{
+.module-inp.module-inp-id.error .inp-login{
     border: 2px solid #F4492E;
 }
 
-.module-input .input-error {
+.module-inp .inp-error {
     display: none;
     margin: 6px 0 0 4px;
     font-size: 14px;
     font-weight: 400;
+    text-align: left;
     color: #F4492E;
 }
 
-.module-input.error .input-error {
+.module-inp.error .inp-error {
     display: block;
 }
 
