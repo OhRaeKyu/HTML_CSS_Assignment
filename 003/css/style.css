@@ -104,14 +104,6 @@ a {
     font-weight: 500;
 }
 
-.modal-head .btn-close {
-    position: absolute;
-    content: "";
-    top: 22px;
-    right: 24px;
-    box-sizing: content-box;
-}
-
 .modal-form {
     padding: 26px 24px 30px;
 }
@@ -141,6 +133,12 @@ a {
     margin-right: 8px;
     background-image: url("../img/icon_check_empty.png");
     vertical-align: -5px;
+}
+
+/* 웹 접근성 고려한 요소 */
+.modal-form .inp-hold:focus + .txt-hold::before {
+    outline: 2px solid;
+    border-radius: 50%;
 }
 
 .modal-form .inp-hold:checked + .txt-hold::before {
@@ -189,4 +187,12 @@ a {
 
 .modal-foot li + li {
     margin-top: 10px;
+}
+
+.cont-modal .btn-close {
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: 24px;
+    box-sizing: content-box;
 }
