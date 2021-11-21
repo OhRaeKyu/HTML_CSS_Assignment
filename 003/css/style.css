@@ -40,6 +40,7 @@ a {
 /* main style */
 #appLogin {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -63,6 +64,9 @@ a {
 /* modal style */
 .cont-modal {
     display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .cont-modal.on {
