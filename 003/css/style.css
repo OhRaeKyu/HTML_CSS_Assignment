@@ -69,13 +69,6 @@ a {
     height: 100vh;
 }
 
-.cont-modal.on {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .cont-modal::after {
     display: block;
     position: fixed;

@@ -16,10 +16,10 @@
             <h2 class="sr-only">로그인 메인 화면</h2>
             <img src="./img/weniv-logo.png" alt="위니브 로고입니다." class="tit-login">
             <p class="txt-login">위니브를 더 즐겁고 편리하게 이용하세요.</p>
-            <button type="button" class="btn-login">로그인</button>
+            <button type="button" id="btnLogin" class="btn-login">로그인</button>
         </article>
     </section>
-    <section class="cont-modal on">
+    <section id="appModal" class="cont-modal">
         <h2 class="sr-only">회원 혹은 SNS 연동 로그인</h2>
         <article class="cont-form-login">
             <header class="modal-head">
@@ -53,29 +53,29 @@
                     <li><a href="#" class="icon-kakao link-sns-login">카카오 계정으로 로그인</a></li>
                 </ul>
             </footer>    
-            <a href="#" class="btn-close"><img src="./img/close.png" alt="닫기 버튼 이미지입니다."></a>
+            <a href="#" id="btnClose" class="btn-close"><img src="./img/close.png" alt="닫기 버튼 이미지입니다."></a>
         </article>
     </section>
     <script>
-    //     var modal = false;
+        var modal = false;
 
-    //     if (modal == false) {
-    //         document.getElementsByClassName(".cont-login .btn-login").onclick = function() {
-    //             document.getElementsByClassName(".cont-modal").style.display="flex";
-    //             document.getElementById("#appLogin").style.display="none";
+        if (modal == false) {
+            document.getElementById("btnLogin").onclick = function() {
+                document.getElementById("appModal").style.display="flex";
+                document.getElementById("appLogin").style.display="none";
 
-    //             modal = true;
-    //         }
-    //     }
+                modal = true;
+            }
+        }
 
-    //     else if (modal == true) {
-    //         document.getElementsByClassName(".cont-modal .btn-close").onclick = function() {
-    //             document.getElementsByClassName(".cont-modal").style.display="none";
-    //             document.getElementById("#appLogin").style.display="flex";
+        else {
+            document.getElementById("btnClose").onclick = function() {
+                document.getElementById("appModal").style.display="none";
+                document.getElementById("appLogin").style.display="flex";
                 
-    //             modal = false;
-    //         }
-    //     }       
-    // </script>
+                modal = false;
+            }
+        }
+    </script>
 </body>
 </html>
