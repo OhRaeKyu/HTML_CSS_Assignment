@@ -53,28 +53,18 @@
                     <li><a href="#" class="icon-kakao link-sns-login">카카오 계정으로 로그인</a></li>
                 </ul>
             </footer>    
-            <a href="#" id="btnClose" class="btn-close"><img src="./img/close.png" alt="닫기 버튼 이미지입니다."></a>
+            <button type="button" id="btnClose" class="btn-close"><img src="./img/close.png" alt="닫기 버튼 이미지입니다."></button>
         </article>
     </section>
     <script>
-        var modal = false;
-
-        if (modal == false) {
-            document.getElementById("btnLogin").onclick = function() {
-                document.getElementById("appModal").style.display="flex";
-                document.getElementById("appLogin").style.display="none";
-
-                modal = true;
-            }
+        document.getElementById("btnLogin").onclick = function() {
+            document.getElementById("appModal").style.display="flex";
+            document.getElementById("appLogin").style.display="none";
         }
 
-        else {
-            document.getElementById("btnClose").onclick = function() {
+        document.getElementById("btnClose").onclick = function() {
                 document.getElementById("appModal").style.display="none";
                 document.getElementById("appLogin").style.display="flex";
-                
-                modal = false;
-            }
         }
     </script>
 </body>
